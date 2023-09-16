@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="pizza-container">
+        <div id="empty-circle" class="circle" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="pizza-image" src="" alt="Pizza_Image">
+        </div>
+       <ul id="selected-items" class="ingredient-list"></ul>
+    </div>
+    <div class="pizza-options">
+        <h2>Pizza Base Options</h2>
+        <div id="base-options" class="options">
+            <div class="pizza-base" id="thin-crust" draggable="true" ondragstart="drag(event)">Thin Crust</div>
+            <div class="pizza-base" id="thick-crust" draggable="true" ondragstart="drag(event)">Thick Crust</div>
+        </div>
+    </div>
+    <div class="ingredient-list">
+        <h2 style="text-align:center">Ingredients</h2>
+        <div id="ingredient-options" class="options">
+            <div class="ingredient" id="cheese" draggable="true" ondragstart="drag(event)">Cheese</div>
+            <div class="ingredient" id="tomato-sauce" draggable="true" ondragstart="drag(event)">Tomato Sauce</div>
+            <div class="ingredient" id="mushrooms" draggable="true" ondragstart="drag(event)">Mushrooms</div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
